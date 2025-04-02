@@ -2,7 +2,8 @@
 <component type="desktop-application">
   <id>@APP_ID@</id>
   <metadata_license>CC0-1.0</metadata_license>
-  <project_license>GPL-3.0-or-later</project_license> <name>Wallpaper Rotator</name>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Wallpaper Rotator</name>
   <summary>Rotate desktop wallpapers automatically</summary>
   <description>
     <p>
@@ -12,10 +13,18 @@
     </p>
   </description>
   <launchable type="desktop-id">@APP_ID@.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/tmeier-lang/wallpaper-rotator/main/data/screenshots/screenshot1.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/tmeier-lang/wallpaper-rotator/main/data/screenshots/screenshot2.png</image>
+    </screenshot>
+  </screenshots>
   <releases>
     <release version="@VERSION@" date="@DATE@"/>
   </releases>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
   <developer_name>tmeier-lang</developer_name>
   <url type="homepage">https://github.com/tmeier-lang/wallpaper-rotator</url>
   <url type="bugtracker">https://github.com/tmeier-lang/wallpaper-rotator/issues</url>
