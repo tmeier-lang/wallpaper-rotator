@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Wallpaper Rotator
+Comment=Rotate desktop wallpapers automatically
+Exec=python3 -m io_github_tmeier_lang_WallpaperRotator.main %U
+Icon=@APP_ID@
+Terminal=false
+Categories=Utility;GTK;GNOME;
+StartupNotify=true
+StartupWMClass=@APP_ID@

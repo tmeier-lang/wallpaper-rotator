@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="wallpaper-rotator"> <schema id="io.github.tmeier_lang.WallpaperRotator" path="/io/github/tmeier_lang/WallpaperRotator/">
+
+    <key name="wallpaper-folder-path" type="s">
+      <default>'DEFAULT_PICTURES'</default> <summary>The directory containing wallpaper images.</summary>
+      <description>
+        Specifies the full path to the folder where the application should look
+        for wallpaper images to rotate.
+      </description>
+    </key>
+
+    <key name="rotation-interval-minutes" type="i">
+        <default>60</default>
+        <range min="1" max="1440"/>
+        <summary>Interval between wallpaper changes in minutes.</summary>
+        <description>
+            How often the wallpaper should be changed automatically when rotation is active.
+        </description>
+    </key>
+
+  </schema>
+
+</schemalist>
