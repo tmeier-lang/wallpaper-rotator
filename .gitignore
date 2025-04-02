@@ -1,0 +1,46 @@
+# --- Build Artifacts ---
+# Meson build directory
+_build/
+
+# Flatpak builder intermediate directory
+_flatpak_build/
+
+# Flatpak builder cache/state directory
+.flatpak-builder/
+
+# Python distribution / packaging / build directories
+# (Good practice even if not using setuptools directly)
+dist/
+build/
+*.egg-info/
+
+
+# --- Python ---
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment directories (Common names)
+venv/
+env/
+*.venv/
+
+
+# --- Common OS / Editor Files ---
+# MacOS
+.DS_Store
+
+# Windows thumbnails
+Thumbs.db
+
+# VSCode internal state (Optional - keep launch/settings if desired)
+# Comment out the lines below if you WANT to commit your VSCode settings
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# If you use other editors, add their specific temp/config files
+# e.g. *.swp for Vim
