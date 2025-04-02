@@ -1,14 +1,18 @@
+#!/usr/bin/env python3 
 # src/main.py
 
 import sys
 
-# Import the application class from the other file in the same package
-from .application import WallpaperRotatorApp
+try:
+    # Make sure this is the absolute import:
+    from io_github_tmeier_lang_WallpaperRotator.application import WallpaperRotatorApp
+except ImportError as e:
+    sys.exit(1) # Exit if import fails
 
 def main():
-    """Application entry point"""
     app = WallpaperRotatorApp()
-    return app.run(sys.argv)
+    result = app.run(sys.argv)
+    return result
 
 if __name__ == "__main__":
     sys.exit(main())

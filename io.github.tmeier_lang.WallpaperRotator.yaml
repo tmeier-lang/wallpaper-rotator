@@ -10,11 +10,11 @@ sdk: org.gnome.Sdk
 
 # Command to run the application inside the sandbox
 # This should match how your installed app is run
-command: python3 -m io_github_tmeier_lang_WallpaperRotator.main
+command: wallpaper-rotator
 
 # Sandbox permissions required by your app
 finish-args:
-  # Basic Wayland/X11 display access
+  # Basic X11/Wayland display access
   - --share=ipc # Needed for GTK/X11
   - --socket=fallback-x11
   - --socket=wayland
@@ -24,12 +24,18 @@ finish-args:
   # 1. Access to user's Pictures directory (Read-Only is safer if possible)
   #    Alternatively: --filesystem=home (less secure) or rely on FileChooser portal
   - --filesystem=xdg-pictures:ro
+  - --filesystem=home  # Needed for wallpaper access
   # 2. Access to the portal service (for FileChooser, etc.)
   - --talk-name=org.freedesktop.portal.Desktop
   # 3. CRUCIAL: Permission to talk to the settings daemon to change background
   - --talk-name=org.gnome.SettingsDaemon.Background
   # Optional: Uncomment if using AyatanaAppIndicator/AppIndicator
   # - --system-talk-name=org.ayatana.indicator.application # Or org.kde.StatusNotifierWatcher
+  # DConf/GSettings access
+  - --filesystem=xdg-config/dconf:ro
+  - --filesystem=~/.config/dconf:ro
+  - --talk-name=ca.desrt.dconf
+  - --env=DCONF_USER_CONFIG_DIR=.config/dconf
 
 # Modules to build
 modules:

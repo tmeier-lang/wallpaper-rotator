@@ -1,0 +1,3 @@
+#!/bin/sh
+# Wrapper script executing the main module within the package
+exec python3 -m io_github_tmeier_lang_WallpaperRotator.main "$@"

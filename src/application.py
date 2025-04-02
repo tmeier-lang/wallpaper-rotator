@@ -16,16 +16,12 @@ class WallpaperRotatorApp(Adw.Application):
 
     def __init__(self, **kwargs):
         super().__init__(application_id=self.APP_ID,
-                         flags=Gio.ApplicationFlags.FLAGS_NONE,
-                         **kwargs)
+                        flags=Gio.ApplicationFlags.FLAGS_NONE,
+                        **kwargs)
         self.win = None
-        # Connect lifecycle signals
         self.connect('activate', self.on_activate)
-        # You might add a 'startup' signal handler here later for one-time setup
 
     def on_activate(self, app):
-        """Called when the application is activated"""
-        # Create the main window if it doesn't exist
         if not self.win:
             self.win = WallpaperRotatorWindow(application=self)
 

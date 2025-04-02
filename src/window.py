@@ -113,7 +113,6 @@ class WallpaperRotatorWindow(Adw.ApplicationWindow):
         self.status_label = Gtk.Label(label="Ready")
         self.content_box.append(self.status_label)
         # --- End of UI Setup ---
-
         self.load_wallpapers()
         # No need to call update_preview here, load_wallpapers calls it if successful
 
