@@ -5,12 +5,9 @@ A simple GTK4/LibAdwaita application for the GNOME desktop that automatically ro
 ## Screenshots
 
 ![Screenshot 1](https://raw.githubusercontent.com/tmeier-lang/wallpaper-rotator/main/data/screenshots/screenshot1.png)
-_Main application window showing controls and preview._
 
 ![Screenshot 2](https://raw.githubusercontent.com/tmeier-lang/wallpaper-rotator/main/data/screenshots/screenshot2.png)
-_Optional: Add a caption for the second screenshot here._
 
-*(Note: Add more screenshots as needed by committing them to `data/screenshots/` and adding image links here using the raw GitHub URL)*
 
 ## Features
 
@@ -85,10 +82,6 @@ The recommended way to install and run Wallpaper Rotator is via Flatpak, **beari
         ```bash
         wallpaper-rotator 
         ```
-
-## License
-
-This project is licensed under the **GPL-3.0-or-later**. See the [COPYING](COPYING) file for the full license text.
 
 ## Bug Reports & Contributing
 
